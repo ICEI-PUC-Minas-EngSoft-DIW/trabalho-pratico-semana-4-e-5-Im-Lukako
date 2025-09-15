@@ -8,15 +8,16 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome:  Lucas Augusto Ferreira Dos Santos
+- Matricula: 898603
+- Proposta de projeto escolhida:  5. Temas e Conteúdos Associados
+- Breve descrição sobre seu projeto:  Site voltado para divulgar conteúdos sobre a natureza, explorando tanto suas paisagens quanto o mundo animal.
+
 
 ## Print da versão responsiva com CSS puro
 
-<<  COLOQUE A IMAGEM AQUI >>
+<<  >>
 
 ## Print da versão responsiva com Bootstrap
 
-<<  COLOQUE A IMAGEM AQUI >>
+<<  >>
