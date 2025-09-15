@@ -1,12 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-BR">
+
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <title>Nosso planeta</title>
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo">
+            <h1>Nosso planeta</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#temas">Temas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="main">
+
+        <!-- Seção de destaq e do tema -->
+        <section class="destaque" id="home">
+            <article class="tema-principal">
+                <a href="noruega.html" class="link-tema" target="_blank">
+                    <img src="https://picsum.photos/id/1015/600/300" alt="Tema principal">
+                    <h2>Noruega e suas belezas naturais</h2>
+                    <p>Descubra conteúdos, veja sobre a natureza e descubra até novos pontos de viagem!</p>
+                </a>
+            </article>
+        </section>
+
+        <!-- Seção de conteúdos associados -->
+        <section class="conteudos" id="temas">
+            <h2>Conteúdos Relacionados</h2>
+            <div class="grid-conteudos">
+                <article class="conteudo">
+                    <a href="grand-canyon.html" class="link-conteudo" target="_blank">
+                        <img src="https://picsum.photos/id/1016/300/200" alt="Conteúdo 1">
+                        <h3>Curiosidades sobre o Grand Canyon</h3>
+                    </a>
+                </article>
+                <article class="conteudo">
+                    <a href="cachorros.html" class="link-conteudo" target="_blank">
+                        <img src="https://picsum.photos/id/1025/300/200" alt="Conteúdo 2">
+                        <h3>Cachorros, de onde eles vieram?</h3>
+                    </a>
+                </article>
+                <article class="conteudo">
+                    <a href="ursos.html" class="link-conteudo" target="_blank">
+                        <img src="https://picsum.photos/id/1020/300/200" alt="Conteúdo 3">
+                        <h3>Ursos! saiba que eles são carnívoros caninos</h3>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- Seção de formulário -->
+        <section class="contato" id="contato">
+            <h2>Inscreva-se para novidades</h2>
+            <form class="formulario">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2025 Aprendizado de Temas. Todos os direitos reservados.</p>
+    </footer>
+    </body>
+
 </html>
