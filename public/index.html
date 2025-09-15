@@ -1,85 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosso planeta</title>
-    <link rel="stylesheet" href="css/styles.css">
-    </head>
-
-    <body>
+    <title>Nosso Planeta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
     <!-- Cabeçalho -->
-    <header class="header">
-        <div class="logo">
-            <h1>Nosso planeta</h1>
+    <header class="bg-primary text-white p-3 sticky-top">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <h1>Nosso Planeta</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#temas">Temas</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#temas">Temas</a></li>
-                <li><a href="#contato">Contato</a></li>
-                 <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Conteúdo principal -->
-    <main class="main">
-
-        <!-- Seção de destaq e do tema -->
-        <section class="destaque" id="home">
-            <article class="tema-principal">
-                <a href="noruega.html" class="link-tema" target="_blank">
-                    <img src="https://picsum.photos/id/1015/600/300" alt="Tema principal">
-                    <h2>Noruega e suas belezas naturais</h2>
-                    <p>Descubra conteúdos, veja sobre a natureza e descubra até novos pontos de viagem!</p>
-                </a>
-            </article>
+    <main class="container my-5">
+        <section class="text-center mb-5" id="home">
+            <a href="#" class="d-block mb-3">
+                <img src="https://picsum.photos/id/1015/600/300" class="img-fluid rounded" alt="Tema principal">
+                <h2>Noruega e suas belezas naturais</h2>
+                <p>Descubra conteúdos sobre natureza e viagem!</p>
+            </a>
         </section>
 
-        <!-- Seção de conteúdos associados -->
-        <section class="conteudos" id="temas">
-            <h2>Conteúdos Relacionados</h2>
-            <div class="grid-conteudos">
-                <article class="conteudo">
-                    <a href="grand-canyon.html" class="link-conteudo" target="_blank">
-                        <img src="https://picsum.photos/id/1016/300/200" alt="Conteúdo 1">
-                        <h3>Curiosidades sobre o Grand Canyon</h3>
-                    </a>
-                </article>
-                <article class="conteudo">
-                    <a href="cachorros.html" class="link-conteudo" target="_blank">
-                        <img src="https://picsum.photos/id/1025/300/200" alt="Conteúdo 2">
-                        <h3>Cachorros, de onde eles vieram?</h3>
-                    </a>
-                </article>
-                <article class="conteudo">
-                    <a href="ursos.html" class="link-conteudo" target="_blank">
-                        <img src="https://picsum.photos/id/1020/300/200" alt="Conteúdo 3">
-                        <h3>Ursos! saiba que eles são carnívoros caninos</h3>
-                    </a>
-                </article>
+        <section id="temas" class="mb-5">
+            <h2 class="mb-4">Conteúdos Relacionados</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/id/1016/300/200" class="card-img-top" alt="Conteúdo 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Curiosidades sobre o Grand Canyon</h5>
+                            <p class="card-text">Explore fatos interessantes sobre o Grand Canyon.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/id/1025/300/200" class="card-img-top" alt="Conteúdo 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Cachorros, de onde eles vieram?</h5>
+                            <p class="card-text">Conheça a história da domesticação dos cães.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/id/1020/300/200" class="card-img-top" alt="Conteúdo 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ursos e seus hábitos</h5>
+                            <p class="card-text">Entenda os hábitos e curiosidades dos ursos.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-
-        <!-- Seção de formulário -->
-        <section class="contato" id="contato">
+        <section id="contato" class="mb-5 text-center">
             <h2>Inscreva-se para novidades</h2>
-            <form class="formulario">
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu email" required>
-                <button type="submit">Enviar</button>
+            <form class="d-flex flex-column gap-3 w-50 mx-auto">
+                <input type="text" class="form-control" placeholder="Seu nome" required>
+                <input type="email" class="form-control" placeholder="Seu email" required>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer class="footer">
+    <footer class="bg-primary text-white text-center p-3">
         <p>&copy; 2025 Aprendizado de Temas. Todos os direitos reservados.</p>
+        <p>
+            <a href="#" class="text-white">Facebook</a> |
+            <a href="#" class="text-white">Instagram</a> |
+            <a href="#" class="text-white">Twitter</a>
+        </p>
     </footer>
-    </body>
-
+</body>
 </html>
-
